@@ -1,0 +1,250 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7; /* Background abu-abu terang untuk seluruh halaman */
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Header */
+header {
+    background: #2c3e50; /* Warna latar belakang gelap untuk header */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4em;
+}
+
+/* Navigasi */
+nav {
+    background-color: #34495e;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #f39c12; /* Efek hover warna emas */
+    border-radius: 5px;
+}
+
+/* Styling untuk section */
+section {
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* Background putih untuk section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Warna heading */
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2980b9; /* Warna heading lebih cerah */
+}
+
+/* Styling untuk list di bagian pendidikan dan organisasi */
+ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #2c3e50; /* Menambahkan border pada gambar */
+}
+
+/* Styling untuk proyek */
+#project-Tools ul li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#project-Tools ul li p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+#project-Tools ul li img {
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk link GitHub dan Looker Studio */
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f39c12; /* Efek hover warna emas */
+    text-decoration: underline;
+}
+
+/* Styling untuk bagian tools */
+#project-Tools ul li p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling untuk bagian kontak */
+#contact p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#contact a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.tools-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tools-list li {
+    text-align: center;
+}
+
+.tools-list img {
+    width: 100px;
+    height: auto;
+}
+
+/* Styling untuk bagian tentang saya */
+#about {
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Styling untuk kontainer tentang saya */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Jarak antar elemen */
+}
+
+.about-image {
+    text-align: center; /* Menyelaraskan gambar dan teks di tengah */
+}
+
+.about-image img {
+    width: 400px;  /* Lebar gambar persegi */
+    height: 400px; /* Tinggi gambar persegi */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi dan tetap terpotong jika perlu */
+    border-radius: 10px; /* Sudut gambar yang melengkung */
+    border: 3px solid #2980b9; /* Border dengan warna biru */
+}
+
+.about-image p {
+    margin-top: 10px; /* Memberikan jarak antara gambar dan teks */
+    font-size: 1.2em;
+    color: #2980b9; /* Warna biru untuk nama */
+    font-weight: bold;
+}
+
+.about-description {
+    flex: 1;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        font-size: 1.1em;
+    }
+}
